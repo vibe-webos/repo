@@ -2,7 +2,7 @@
   {
     "id": "io.lift.webos",
     "title": "Lift",
-    "description": "Lift для webOS TV с локальным прокси потоков",
+    "description": "Lift для webOS TV",
     "icon": "icons/io.lift.webos.png",
     "sourceUrl": "https://github.com/USER/REPO",
     "type": "web",
