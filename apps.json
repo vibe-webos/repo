@@ -1,0 +1,22 @@
+[
+  {
+    "id": "io.lift.webos",
+    "title": "Lift",
+    "description": "Lift для webOS TV с локальным прокси потоков",
+    "icon": "icons/io.lift.webos.png",
+    "sourceUrl": "https://github.com/USER/REPO",
+    "type": "web",
+    "category": "media",
+    "rootRequired": "optional"
+  },
+  {
+    "id": "com.sinoptik.webos",
+    "title": "Sinoptik",
+    "description": "Погода Sinoptik для webOS TV",
+    "icon": "icons/com.sinoptik.webos.png",
+    "sourceUrl": "https://github.com/USER/REPO",
+    "type": "web",
+    "category": "utility",
+    "rootRequired": false
+  }
+]
