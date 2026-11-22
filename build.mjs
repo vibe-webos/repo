@@ -3,7 +3,8 @@ import { readFileSync, readdirSync, writeFileSync, statSync } from 'node:fs';
 
 const REPO = process.env.GITHUB_REPOSITORY || 'USER/REPO';
 const BRANCH = process.env.GITHUB_REF_NAME || 'main';
-const RAW = `https://raw.githubusercontent.com/${REPO}/${BRANCH}`;
+const [owner, name] = REPO.split('/');
+const RAW = `https://${owner}.github.io/${name}`;
 const cmp = (a, b) => a.localeCompare(b, undefined, { numeric: true });
 
 const files = readdirSync('ipk').filter(f => f.endsWith('.ipk'));
