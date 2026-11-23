@@ -1,0 +1,54 @@
+{
+  "paging": {
+    "page": 1,
+    "count": 2,
+    "maxPage": 1,
+    "itemsTotal": 2
+  },
+  "packages": [
+    {
+      "id": "io.lift.webos",
+      "title": "Lift",
+      "iconUri": "https://vibe-webos.github.io/repo/icons/io.lift.webos.png",
+      "shortDescription": "Lift для webOS TV",
+      "category": "media",
+      "manifest": {
+        "id": "io.lift.webos",
+        "version": "0.2.53",
+        "type": "web",
+        "title": "Lift",
+        "appDescription": "Lift для webOS TV",
+        "iconUri": "https://vibe-webos.github.io/repo/icons/io.lift.webos.png",
+        "sourceUrl": "https://github.com/vibe-webos/repo",
+        "rootRequired": "optional",
+        "ipkUrl": "https://vibe-webos.github.io/repo/ipk/io.lift.webos_0.2.53_all.ipk",
+        "ipkSize": 624626,
+        "ipkHash": {
+          "sha256": "42a6455ea26e2f5eba8bcedccce7b994ed1a58ba3b354796165f60c60c5b83d3"
+        }
+      }
+    },
+    {
+      "id": "com.sinoptik.webos",
+      "title": "Sinoptik",
+      "iconUri": "https://vibe-webos.github.io/repo/icons/com.sinoptik.webos.png",
+      "shortDescription": "Погода Sinoptik для webOS TV",
+      "category": "utility",
+      "manifest": {
+        "id": "com.sinoptik.webos",
+        "version": "1.1.1",
+        "type": "web",
+        "title": "Sinoptik",
+        "appDescription": "Погода Sinoptik для webOS TV",
+        "iconUri": "https://vibe-webos.github.io/repo/icons/com.sinoptik.webos.png",
+        "sourceUrl": "https://github.com/vibe-webos/repo",
+        "rootRequired": false,
+        "ipkUrl": "https://vibe-webos.github.io/repo/ipk/com.sinoptik.webos_1.1.1_all.ipk",
+        "ipkSize": 1721242,
+        "ipkHash": {
+          "sha256": "c549423460d2603b27271f1e313544015aca733b25b97be216ac4a463342c704"
+        }
+      }
+    }
+  ]
+}

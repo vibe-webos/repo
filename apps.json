@@ -4,7 +4,7 @@
     "title": "Lift",
     "description": "Lift для webOS TV",
     "icon": "icons/io.lift.webos.png",
-    "sourceUrl": "https://github.com/USER/REPO",
+    "sourceUrl": "https://github.com/vibe-webos/repo",
     "type": "web",
     "category": "media",
     "rootRequired": "optional"
@@ -14,7 +14,7 @@
     "title": "Sinoptik",
     "description": "Погода Sinoptik для webOS TV",
     "icon": "icons/com.sinoptik.webos.png",
-    "sourceUrl": "https://github.com/USER/REPO",
+    "sourceUrl": "https://github.com/vibe-webos/repo",
     "type": "web",
     "category": "utility",
     "rootRequired": false
