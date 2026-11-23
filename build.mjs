@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { readFileSync, readdirSync, writeFileSync, statSync } from 'node:fs';
+import { readFileSync, readdirSync, writeFileSync, statSync, existsSync } from 'node:fs';
 
 const REPO = process.env.GITHUB_REPOSITORY || 'USER/REPO';
 const BRANCH = process.env.GITHUB_REF_NAME || 'main';
@@ -16,8 +16,14 @@ const packages = apps.map(a => {
   const version = f.slice(a.id.length + 1).replace(/_[^_]+\.ipk$/, '');
   const buf = readFileSync(`ipk/${f}`);
   const iconUri = `${RAW}/${a.icon}`;
+  const shotDir = `screenshots/${a.id}`;
+  const shots = existsSync(shotDir)
+    ? readdirSync(shotDir).filter(f => /\.(png|jpe?g|webp)$/i.test(f)).sort(cmp)
+    : [];
+  const fullDescription = [a.description, ...shots.map(f => `![${f}](${RAW}/${shotDir}/${encodeURIComponent(f)})`)].join('\n\n');
   return {
     id: a.id,
+    fullDescription,
     title: a.title,
     iconUri,
     shortDescription: a.description,

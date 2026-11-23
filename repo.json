@@ -8,6 +8,7 @@
   "packages": [
     {
       "id": "io.lift.webos",
+      "fullDescription": "Lift для webOS TV",
       "title": "Lift",
       "iconUri": "https://vibe-webos.github.io/repo/icons/io.lift.webos.png",
       "shortDescription": "Lift для webOS TV",
@@ -30,6 +31,7 @@
     },
     {
       "id": "com.sinoptik.webos",
+      "fullDescription": "Погода Sinoptik для webOS TV",
       "title": "Sinoptik",
       "iconUri": "https://vibe-webos.github.io/repo/icons/com.sinoptik.webos.png",
       "shortDescription": "Погода Sinoptik для webOS TV",
